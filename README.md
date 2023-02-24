@@ -14,4 +14,4 @@ For run:
 
 $ bash Filter300NT.bin
 
-//Axtell MJ, Meyers BC (2018) Revisiting criteria for plant MicroRNA annotation in the era of big data. The Plant Cell 30(2), 272-284. doi: 10.1105/tpc.17.00851
+Axtell MJ, Meyers BC (2018) Revisiting criteria for plant MicroRNA annotation in the era of big data. The Plant Cell 30(2), 272-284. doi: 10.1105/tpc.17.00851
