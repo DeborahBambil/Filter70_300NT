@@ -6,8 +6,11 @@ This script remove long sequences (max. length of 300 nt), according to updated 
 Files:
 
 Filter300NT.bin (code)
+
 saida_MIR_filtradas.fa (input)
+
 PlantHairpin.fa (output - sequences with <300)
+
 PlantHairpinCountNT.fa (output - name sequences and number of nucleotides)
 
 For run:
