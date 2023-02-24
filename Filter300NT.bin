@@ -1,0 +1,7 @@
+#Filter of sequences greater than the length of 300 nt
+#Author Deborah Bambil
+#!/bin/bash
+awk '/^>/ {printf("\n%s\n",$0);next; } { printf("%s",$0);}  END {printf("\n");}' < saida_MIR_filtradas.fa > PlantHairpinLine.fa
+awk '/^>/ { getline se } length(se) <301 { print $0 "\n" se }' PlantHairpinLine.fa > PlantHairpin.fa
+for file in PlantHairpin.fa; do awk -v OFS="\t" '/^>/ {getline seq}; {gsub(/>/,"",$0); print FILENAME, $0, length(seq)}' $file; done > PlantHairpinCountNT.fa
+rm PlantHairpinLine.fa
