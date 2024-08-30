@@ -1,20 +1,18 @@
 # Filter 70-300NT
-Author: Deborah Bambil
+**Author:** Deborah Bambil
 
-This script remove sequences (min. 70 max. 300 nt length), according to updated criteria for plant pre-miRNA annotations.
+This script removes sequences with a minimum length of 70 nt and a maximum length of 300 nt, according to updated criteria for plant pre-miRNA annotations.
 
-Files:
+**Files:**
 
-Filter300NT.bin (code)
+- `Filter300NT.bin` (code)
+- `saida_MIR_filtradas.fa` (input)
+- `PlantHairpin.fa` (output - sequences with <300 nt)
+- `PlantHairpinCountNT.fa` (output - sequence names and number of nucleotides)
 
-saida_MIR_filtradas.fa (input)
+**To run:**
 
-PlantHairpin.fa (output - sequences with <300)
-
-PlantHairpinCountNT.fa (output - name sequences and number of nucleotides)
-
-For run:
-
-$ bash Filter70_300NT.bin
+```bash
+$ bash Filter300NT.bin
 
 
